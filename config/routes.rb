@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   #dashboard
   get "/dashboard" => "accounts#index"
+  # profile
+  get "profile/:username" => "accounts#profile",as: :profile
 
   # post
   resources :posts, only: [:create,:show,:new]
