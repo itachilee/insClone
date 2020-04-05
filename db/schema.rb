@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_04_180727) do
+ActiveRecord::Schema.define(version: 2020_04_05_035531) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2020_04_04_180727) do
     t.string "last_name", limit: 20
     t.string "username", limit: 20
     t.string "image"
-    t.text "descruption"
+    t.text "description"
     t.string "website"
     t.index ["email"], name: "index_accounts_on_email", unique: true
     t.index ["reset_password_token"], name: "index_accounts_on_reset_password_token", unique: true
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2020_04_04_180727) do
     t.bigint "account_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "description"
     t.index ["account_id"], name: "index_posts_on_account_id"
   end
 

@@ -31,7 +31,7 @@ gem 'carrierwave', '~> 2.1'
 # gem 'fog', '~> 2.2'
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
-
+gem 'ancestry'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
